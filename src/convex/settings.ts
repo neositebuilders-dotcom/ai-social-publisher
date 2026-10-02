@@ -57,7 +57,7 @@ export const aiStatus = query({
     }
     return {
       provider: "local",
-      model: "cadence-heuristic-v1",
+      model: "local-heuristic-v1",
       endpoint: "in-process",
       costsMoney: false,
       note: "Built-in local generator. Runs at $0 with no API key.",

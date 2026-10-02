@@ -111,7 +111,7 @@ export default function Analytics() {
             <EmptyState
               icon={Eye}
               title="No metrics collected yet"
-              description="Once a post publishes successfully through a connected account, Cadence starts collecting its metrics."
+              description="Once a post publishes successfully through a connected account, its metrics are collected automatically."
             />
           ) : (
             <ChartContainer

@@ -54,7 +54,7 @@ const FEATURES = [
   {
     icon: RefreshCw,
     title: "Content memory",
-    body: "Cadence records what it already published and rotates topics so your feed never repeats itself.",
+    body: "Every published post is recorded and topics rotate, so your feed never repeats itself.",
   },
   {
     icon: BarChart3,
@@ -70,7 +70,7 @@ const STEPS = [
   },
   {
     title: "Describe the campaign",
-    body: "Platforms, cadence, times, timezone, voice, pillars and what to avoid.",
+    body: "Platforms, posting frequency, times, timezone, brand voice, content pillars and what to avoid.",
   },
   {
     title: "Generate & validate",
@@ -133,12 +133,14 @@ function Nav() {
         <button
           onClick={() => navigate("/")}
           className="flex items-center gap-2.5"
-          aria-label="Cadence home"
+          aria-label="AI Social Publisher home"
         >
           <span className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
             <Sparkles className="size-4" />
           </span>
-          <span className="text-sm font-bold tracking-tight">Cadence</span>
+          <span className="text-sm font-bold tracking-tight">
+            AI Social Publisher
+          </span>
         </button>
         <nav className="hidden items-center gap-7 text-sm text-muted-foreground md:flex">
           <a href="#features" className="transition-colors hover:text-foreground">
@@ -269,7 +271,7 @@ export default function Landing() {
           >
             <Badge variant="outline" className="w-fit gap-1.5">
               <Timer className="size-3.5" />
-              AI social autopilot · runs at $0 in development
+              AI-powered social publishing · runs at $0 during development
             </Badge>
             <h1 className="mt-5 text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
               Your social engine,
@@ -277,10 +279,10 @@ export default function Landing() {
               on autopilot.
             </h1>
             <p className="mt-5 max-w-xl text-base leading-7 text-muted-foreground sm:text-lg">
-              Describe your campaign once. Cadence generates platform-specific
-              content every day, validates it against each network&apos;s rules,
-              schedules it in your timezone and publishes through official APIs —
-              then tells you exactly what happened.
+              Describe your campaign once. AI Social Publisher generates
+              platform-specific content every day, checks it against each
+              network&apos;s rules, schedules it in your timezone and publishes
+              through official APIs — then reports exactly what happened.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Button size="lg" onClick={go}>
@@ -328,7 +330,7 @@ export default function Landing() {
 
                 <div className="grid grid-cols-3 gap-2">
                   {[
-                    { label: "Cadence", value: "Every day" },
+                    { label: "Frequency", value: "Every day" },
                     { label: "Times", value: "09:00 · 17:00" },
                     { label: "Timezone", value: "Europe/Berlin" },
                   ].map((item) => (
@@ -596,7 +598,7 @@ export default function Landing() {
         >
           <div className="pointer-events-none absolute inset-x-0 top-0 h-40 accent-glow" />
           <h2 className="relative text-3xl font-bold tracking-tight sm:text-4xl">
-            Put your social on a cadence
+            Put your social media on autopilot
           </h2>
           <p className="relative mx-auto mt-3 max-w-xl text-muted-foreground">
             Create a workspace, describe your campaign and watch the calendar fill
@@ -617,7 +619,9 @@ export default function Landing() {
             <span className="flex size-6 items-center justify-center rounded-md bg-primary text-primary-foreground">
               <Sparkles className="size-3.5" />
             </span>
-            <span className="font-medium text-foreground">Cadence</span>
+            <span className="font-medium text-foreground">
+              AI Social Publisher
+            </span>
           </div>
           <p>Official APIs only · OAuth 2.0 · Encrypted tokens</p>
         </div>

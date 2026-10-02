@@ -98,9 +98,11 @@ function BrandMark() {
         <Sparkles className="size-4" />
       </span>
       <span className="flex flex-col leading-none">
-        <span className="text-sm font-bold tracking-tight">Cadence</span>
+        <span className="text-sm font-bold tracking-tight">
+          AI Social Publisher
+        </span>
         <span className="text-[10px] uppercase tracking-widest text-muted-foreground">
-          Social autopilot
+          Publish on autopilot
         </span>
       </span>
     </NavLink>

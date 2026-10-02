@@ -1,6 +1,6 @@
-# Cadence — AI social media automation
+# AI Social Publisher
 
-Cadence is an AI-powered social media automation workspace. You describe a
+AI Social Publisher is an AI-powered social media automation workspace. You describe a
 campaign once, and it generates platform-specific content on your schedule,
 validates it against each network's real limits, queues it, and publishes
 through **official OAuth 2.0 APIs** — then reports exactly what happened.
@@ -99,7 +99,7 @@ template.
 | `AI_MODEL` | Defaults to `gpt-4o-mini`. |
 | `MEDIA_IMAGE_BASE` | Optional. Base URL for placeholder image seeding (defaults to `https://picsum.photos/seed`). |
 
-Without `AI_BASE_URL`/`AI_API_KEY`, Cadence uses its built-in local generator:
+Without `AI_BASE_URL`/`AI_API_KEY`, the built-in local generator is used:
 real, platform-shaped copy composed from your brief and content history, with
 zero API cost.
 
@@ -137,7 +137,7 @@ picked up automatically.
 ### Try it end to end
 
 1. Open the app and sign in with email OTP (or continue as guest).
-2. **AI automations → New automation.** Pick platforms, cadence, times,
+2. **AI automations → New automation.** Pick platforms, posting frequency, times,
    timezone, content pillars and instructions.
 3. **Generate now.** With approval mode you get drafts; with autopilot and
    `autoPublish` you get scheduled posts and queued jobs.

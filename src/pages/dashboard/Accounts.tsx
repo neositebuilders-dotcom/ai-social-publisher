@@ -105,7 +105,7 @@ export default function Accounts() {
     >
       <PageHeader
         title="Connected accounts"
-        description="Cadence publishes only through official OAuth 2.0 APIs. Tokens are encrypted at rest and never leave the server."
+        description="Publishing goes only through official OAuth 2.0 APIs. Access tokens are encrypted at rest and never leave the server."
       />
 
       <div className="flex items-start gap-2.5 rounded-xl border border-border/70 bg-accent/40 px-4 py-3 text-sm">

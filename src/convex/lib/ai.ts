@@ -309,7 +309,7 @@ function chooseTopic(
 
 export const localProvider: AIProvider = {
   name: "local",
-  model: "cadence-heuristic-v1",
+  model: "local-heuristic-v1",
   async generate(req) {
     const adapter = getAdapter(req.platform);
     if (!adapter) throw new Error(`Unknown platform ${req.platform}`);
@@ -358,7 +358,7 @@ export const localProvider: AIProvider = {
       const base = process.env.MEDIA_IMAGE_BASE ?? "https://picsum.photos/seed";
       const w = req.platform === "instagram" ? 1080 : 1200;
       const hgt = req.platform === "instagram" ? 1350 : 675;
-      mediaUrl = `${base}/cadence-${slug(topic)}-${h % 9973}/${w}/${hgt}`;
+      mediaUrl = `${base}/aipublisher-${slug(topic)}-${h % 9973}/${w}/${hgt}`;
     }
 
     const title = titleCase(
@@ -380,7 +380,7 @@ export const localProvider: AIProvider = {
       mediaType,
       mediaUrl,
       provider: req.platform === "picsart" ? "picsart" : "local",
-      model: "cadence-heuristic-v1",
+      model: "local-heuristic-v1",
     };
   },
 };
@@ -477,7 +477,7 @@ export function createRemoteProvider(opts: {
         const mediaType: ContentType = req.contentType;
         if (mediaType === "image" || mediaType === "story" || mediaType === "carousel") {
           const base = process.env.MEDIA_IMAGE_BASE ?? "https://picsum.photos/seed";
-          mediaUrl = `${base}/cadence-${hash(parsed.topicKey ?? req.platform)}/1080/1350`;
+          mediaUrl = `${base}/aipublisher-${hash(parsed.topicKey ?? req.platform)}/1080/1350`;
         }
 
         return {

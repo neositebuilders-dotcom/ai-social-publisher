@@ -1,7 +1,7 @@
 {
-  "name": "freebuff.com application",
-  "short_name": "freebuff.com",
-  "description": "freebuff.com application",
+  "name": "AI Social Publisher",
+  "short_name": "Publisher",
+  "description": "AI-powered social media automation: generate, schedule and publish across platforms.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

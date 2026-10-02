@@ -62,7 +62,7 @@ export default function Overview() {
     <motion.div {...fade} className="space-y-8">
       <PageHeader
         title="Overview"
-        description="Everything Cadence is generating, queuing and publishing on your behalf."
+        description="Everything being generated, queued and published on your behalf."
         actions={
           <>
             <Button variant="outline" onClick={syncAnalytics} disabled={syncing}>
@@ -117,7 +117,7 @@ export default function Overview() {
               <EmptyState
                 icon={CalendarClock}
                 title="Nothing scheduled yet"
-                description="Create an automation and Cadence will fill this calendar with platform-specific posts."
+                description="Create an automation and your calendar will fill itself with platform-specific posts."
                 action={
                   <Button onClick={() => navigate("/dashboard/automations")}>
                     <Sparkles className="size-4" />

@@ -254,8 +254,8 @@ function AutomationDialog({
             {campaign ? "Edit automation" : "New AI automation"}
           </DialogTitle>
           <DialogDescription>
-            Cadence generates platform-specific content, validates it against each
-            network&apos;s rules and schedules it in your timezone.
+            Each automation generates platform-specific content, validates it
+            against every network&apos;s rules, then schedules it in your timezone.
           </DialogDescription>
         </DialogHeader>
 
@@ -276,7 +276,7 @@ function AutomationDialog({
                 id="business"
                 value={form.business}
                 onChange={(e) => set("business", e.target.value)}
-                placeholder="Cadence — social media automation"
+                placeholder="Nimbus Analytics — product analytics for small teams"
               />
             </div>
           </div>
@@ -560,7 +560,7 @@ export default function Automations() {
     >
       <PageHeader
         title="AI automations"
-        description="Reusable campaigns: Cadence reads the brief, keeps a memory of what it already published, and produces fresh platform-native content each run."
+        description="Reusable campaigns. Each one reads your brief, remembers what it has already published, and produces fresh platform-native content every run."
         actions={
           <Button
             onClick={() => {
@@ -578,7 +578,7 @@ export default function Automations() {
         <EmptyState
           icon={Sparkles}
           title="No automations yet"
-          description="Describe what you sell and how you want to sound. Cadence handles the rest on your schedule."
+          description="Describe what you sell and how you want to sound. AI Social Publisher handles the rest, on your schedule."
           action={
             <Button
               onClick={() => {

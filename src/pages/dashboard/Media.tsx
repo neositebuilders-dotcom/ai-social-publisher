@@ -88,7 +88,7 @@ export default function Media() {
         <EmptyState
           icon={ImageIcon}
           title="No media yet"
-          description="Add an image or video URL, or upload a file. Cadence attaches media to posts that require it."
+          description="Add an image or video URL, or upload a file. Media is attached to the posts that require it."
           action={
             <Button onClick={() => setOpen(true)}>
               <Upload className="size-4" />

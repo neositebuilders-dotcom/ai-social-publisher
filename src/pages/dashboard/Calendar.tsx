@@ -70,7 +70,7 @@ export default function Calendar() {
     >
       <PageHeader
         title="Content calendar"
-        description="Everything Cadence has queued, laid out in your workspace timezone."
+        description="Everything currently queued, laid out in your workspace timezone."
         actions={
           <div className="flex items-center gap-2">
             <Button
